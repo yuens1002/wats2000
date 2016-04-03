@@ -1,16 +1,19 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
+// Override Bootstrap variables
+@import "variables";
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
-h1 {
-    color: green;
-}
+// Site-specific styles
+// Add additional stylesheets below
+@import "content";
 
-h1 {
-    color: green;
-}
+// google font to use for body text
+@import url(https://fonts.googleapis.com/css?family=Khand);
+
 
 .browsehappy {
   margin: 0.2em 0;
@@ -23,6 +26,7 @@ h1 {
 body {
   padding-top: 20px;
   padding-bottom: 20px;
+  background-image: url('../cheap_diagonal_fabric.png');
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
