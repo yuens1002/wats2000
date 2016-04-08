@@ -12,7 +12,7 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 @import "content";
 
 // google font to use for body text
-@import url(https://fonts.googleapis.com/css?family=Khand);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
 
 
 .browsehappy {
@@ -39,7 +39,8 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: none;
+}
 
   /* Make the masthead heading the same height as the navigation */
   h3 {
@@ -48,13 +49,12 @@ body {
     line-height: 40px;
     padding-bottom: 19px;
   }
-}
 
 /* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid $gray-lighter;
 }
 
 .container-narrow > hr {
@@ -66,8 +66,8 @@ body {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   .btn {
-    font-size: 21px;
-    padding: 14px 24px;
+    font-size: 2rem;
+    padding: 1rem 2rem;
   }
 }
 

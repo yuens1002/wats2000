@@ -1,8 +1,20 @@
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid black;
-    margin: 1em 0;
-    padding: 0; 
+.container .jumbotron {
+    @include border-top-radius(0px);
+    @include border-bottom-radius(50px);
 }
+
+//animating the msg in jumbotron
+.jumbotron >h1 {
+    position: relative;
+    @include animation(move 2s ease-out 1s forwards); 
+}
+
+@keyframes move {
+    0% {left: 0;}
+    20% {left: 100px;}
+    40% {left: -100px;}
+    60% {left: 50px}
+    80% {left: -50px}
+    100% {left: 0;}
+}
+
