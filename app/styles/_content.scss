@@ -1,5 +1,13 @@
+@mixin page-title ($kerning, $color) {
+  letter-spacing: $kerning;
+  color: $color;
+  font-weight: 400;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
 .container .jumbotron {
-    @include border-top-radius(0px);
+    @include border-top-radius(0);
     @include border-bottom-radius(50px);
 }
 
@@ -17,4 +25,9 @@
     80% {left: -50px}
     100% {left: 0;}
 }
+
+.page-title {
+  @include page-title(5px, $brand-primary);
+}
+
 
